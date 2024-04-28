@@ -8,22 +8,23 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <style>
     .box{
-        background-color: #F1EEDC;
+        background-color: #E8EFCF;
         border: solid black 1px;
     }
     body{
-        background-image: url('');
+        background-image: url('Assets/HomeWallpeper.jpg');
+        background-size: cover;
     }
     .t1{
         color: black;
     }
 </style>
 <body>
-    <div class="container mt-5 w-50">
-        <h1 class="text-center">Login</h1>
+    <div class="container mt-5 w-50 ">
         <div class="row justify-content-center">
             <div class="col-sm-6">
                 <div class="box border rounded p-5">
+                    <h1 class="text-center">Login</h1>
                     <form action="" method="post">
                         <div class="form-group">
                             <label for="username"><strong>Username</strong></label>
@@ -37,12 +38,16 @@
                             <input class="form-check-input" type="checkbox" id="flexCheckDefault">
                             <label class="form-check-label text-light d-flex justify-content-between" for="flexCheckDefault">
                             <span class="t1"><strong>Remember Me</strong></span>
-                            <a href="" class="text-decoration-none">forgot Password?</a>
+                            <a href="" class="text-decoration-none">Forgot Password?</a>
                             </label>
-                        </div>
+                        </div><br>
                         <div class="row justify-content-center">
-                            <div class="col-auto">
-                                <button class="btn btn-primary" type="submit" name="login">Login</button>
+                            <button class="btn btn-primary" type="submit" name="login">Login</button>
+                        </div><br>
+                        <div class="form- check">
+                            <div>
+                                <strong>Don't have account?</strong>&nbsp;<a href="register.php" class="text-decoration-none">Register Now</a>
+                                </label>
                             </div>
                         </div>
                     </form>
