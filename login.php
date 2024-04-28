@@ -9,6 +9,13 @@
 <style>
     .box{
         background-color: #F1EEDC;
+        border: solid black 1px;
+    }
+    body{
+        background-image: url('');
+    }
+    .t1{
+        color: black;
     }
 </style>
 <body>
@@ -17,7 +24,28 @@
         <div class="row justify-content-center">
             <div class="col-sm-6">
                 <div class="box border rounded p-5">
-
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="username"><strong>Username</strong></label>
+                            <input type="text" class="form-control rounded" id="username" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><strong>Password</strong></label>
+                            <input type="password" class="form-control rounded" id="password" name="password">
+                        </div><br>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                            <label class="form-check-label text-light d-flex justify-content-between" for="flexCheckDefault">
+                            <span class="t1"><strong>Remember Me</strong></span>
+                            <a href="" class="text-decoration-none">forgot Password?</a>
+                            </label>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <button class="btn btn-primary" type="submit" name="login">Login</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
