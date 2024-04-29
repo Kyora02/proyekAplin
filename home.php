@@ -77,8 +77,8 @@
   </div>
   <div id="listgame" style="display:flex;">
     <div id="isi">
-      top up game
-      <img src="game.jpg" alt="">
+      top up game <br>
+      <img src="Assets/game.jpg" alt="">
     </div>
   </div>
 </body>
