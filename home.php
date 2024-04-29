@@ -86,6 +86,16 @@
       <br>
       <img src="Assets/akun.jpg" alt="">
     </div>
+    <div id="isi">
+      Voucher & Game Key
+      <br>
+      <img src="Assets/voucher.jpg" alt="">
+    </div>
+    <div id="isi">
+      Streaming
+      <br>
+      <img src="Assets/streaming.jpg" alt="">
+    </div>
 </div>
 
 </body>
