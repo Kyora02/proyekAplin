@@ -1,3 +1,14 @@
+<?php
+if(isset($_POST['login'])){
+    header("location: index.php");
+}
+if(isset($_POST['register'])){
+    echo"<script>alert('Succes login')</script>";
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,9 +63,12 @@
                             <strong>I agree to the</strong>&nbsp;<a href="" class="text-decoration-none">privacy policy of itemku.</a>
                         </label>
                         </div><br>
+                        <form action="" method="post">
                         <div class="row justify-content-center">
                             <button class="btn btn-primary" type="submit" name="register">Create Account</button>
-                        </div>
+                        </div><br>
+                        <button name="login" class="btn btn-primary" type="submit">Already Have an Account? </button>
+                        </form>
                     </form>
                 </div>
             </div>
