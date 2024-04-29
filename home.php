@@ -107,18 +107,26 @@
       <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>Mobile Legends</h2>
           <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>
-          <p>This is the content for Mobile Legends.</p>
+          
       </div>
   
       <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>PUBG Mobile</h2>
-          <p>This is the content for PUBG Mobile.</p>
+          <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
       </div>
   
       <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>CS:GO</h2>
-          <p>This is the content for Counter-Strike: Global Offensive.</p>
-      </div>  
+          <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
+      </div> 
+      <div id="roblox" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Roblox</h2>
+          <center><img src="Assets/roblox.jpg" alt="" width="150px" height="150px"></center>
+      </div> 
+      <div id="valo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Valorant</h2>
+          <center><img src="Assets/valo.jpg" alt="" width="150px" height="150px"></center>
+      </div>    
     </div>
 </div>
 </body>
