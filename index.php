@@ -70,7 +70,7 @@ if(isset($_POST['superadmin'])){
                         </div><br>
                         <form action="" method="post">
                             <input class="btn btn-primary" type="submit" value="Security Admin" name="securityadmin">
-                            <input class="btn btn-primary" type="submit" value="Security Admin" name="superadmin">
+                            <input class="btn btn-primary" type="submit" value="Super Admin" name="superadmin">
                         </form>
                     </form>
                 </div>
