@@ -75,12 +75,29 @@
     </div>
   </nav>
   </div>
-  <div id="listgame" style="display:flex;">
+  <div id="listgame" style="display:flex; justify-content: space-evenly;margin-top:30px">
     <div id="isi">
-      top up game <br>
       <img src="Assets/game.jpg" alt="">
+      <br>
+      Top Up Game 
     </div>
-  </div>
+    <div id="isi">
+      <img src="Assets/akun.jpg" alt="">
+      <br>
+      Jual Beli Akun
+    </div>
+    <div id="isi">
+      <img src="Assets/voucher.jpg" alt="">
+      <br>
+      Voucher & Game Key
+    </div>
+    <div id="isi">
+      <img src="Assets/streaming.jpg" alt="">
+      <br>
+      Streaming
+    </div>
+</div>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
