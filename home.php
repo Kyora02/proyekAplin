@@ -26,7 +26,7 @@
                 <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="category.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
                             <path d="M9 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V9C3 9.53043 3.21071 10.0391 3.58579 10.4142C3.96086 10.7893 4.46957 11 5 11H9C9.53043 11 10.0391 10.7893 10.4142 10.4142C10.7893 10.0391 11 9.53043 11 9V5C11 4.46957 10.7893 3.96086 10.4142 3.58579C10.0391 3.21071 9.53043 3 9 3ZM9 9H5V5H9V9Z" fill="#474747"></path>
@@ -105,7 +105,7 @@
     </div>
     </div>
   </nav>
-    <div class="container-xl d-flex justify-content-center">
+    <!-- <div class="container-xl d-flex justify-content-center">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +120,7 @@
             <a class="nav-link" href="#">Link</a>
           </li>
           <!-- Category items with dropdown behavior -->
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Category
@@ -137,10 +137,10 @@
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         </form>
-      </div>
-    </div>
-  </nav>
-  </div>
+      </div> -->
+    <!-- </div> -->
+  <!-- </nav> --> -->
+  <!-- </div> -->
   <div id="listgame" style="display:flex; justify-content: space-evenly;margin-top:30px">
     <div id="isi">
       <img src="Assets/game.jpg" alt="">
