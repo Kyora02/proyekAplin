@@ -104,7 +104,7 @@
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo'])">PC Game</button>
     </div>
     <div id="isicontent" style="display:flex;justify-content:space-evenly;">
-      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px; justify-content:center;" class="content">
           <h2>Mobile Legends</h2>
           <img src="Assets/ml.jpg" alt="" width="150px" height="150px">
           <p>This is the content for Mobile Legends.</p>
