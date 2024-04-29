@@ -106,7 +106,7 @@
     <div id="isicontent" style="display:flex;justify-content:space-evenly;">
       <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>Mobile Legends</h2>
-          <img src="Assets/ml.jpg" alt="">
+          <img src="Assets/ml.jpg" alt="" width="50px" height="50px">
           <p>This is the content for Mobile Legends.</p>
       </div>
   
