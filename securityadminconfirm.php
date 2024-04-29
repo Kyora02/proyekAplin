@@ -40,12 +40,12 @@ if(isset($_POST['logout'])){
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
         <li class="nav-item">
-            <a href="#" class="nav-link  text-white" aria-current="page">
+            <a href="securityadmin.php" class="nav-link  text-white" aria-current="page">
             Home
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link text-white">
+            <a href="securityadminrequest.php" class="nav-link text-white">
             Request Transaction
             </a>
         </li>
@@ -82,7 +82,7 @@ if(isset($_POST['logout'])){
 
         </div><br><br><br><br>
         <div class="container">
-            <h4 style="background-color:#272731; padding:20px;border-radius:15px;">Total Transaksi Yang Telah Di Lakukan : </h4><br>
+            <h4 style="background-color:#272731; padding:20px;border-radius:15px;">Confirm Transaction : </h4><br>
             
             <div style="background-color:#282c34;padding:20px;border-radius:15px;">
                 <table class="table table-dark">
