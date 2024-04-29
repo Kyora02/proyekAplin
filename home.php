@@ -77,24 +77,24 @@
   </div>
   <div id="listgame" style="display:flex; justify-content: space-evenly;">
     <div id="isi">
-      Top Up Game 
-      <br>
       <img src="Assets/game.jpg" alt="">
+      <br>
+      Top Up Game 
     </div>
     <div id="isi">
-      Jual Beli Akun
-      <br>
       <img src="Assets/akun.jpg" alt="">
+      <br>
+      Jual Beli Akun
     </div>
     <div id="isi">
-      Voucher & Game Key
-      <br>
       <img src="Assets/voucher.jpg" alt="">
+      <br>
+      Voucher & Game Key
     </div>
     <div id="isi">
-      Streaming
-      <br>
       <img src="Assets/streaming.jpg" alt="">
+      <br>
+      Streaming
     </div>
 </div>
 
