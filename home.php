@@ -26,19 +26,19 @@
                 <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
             </li>
             <!-- Category items with dropdown behavior -->
-<li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Category
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
-        <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
-        <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
-        <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
-        <a class="dropdown-item" href="category.php?category=Console">Console</a>
-    </div>
-</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Category
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
+                    <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
+                    <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
+                    <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
+                    <a class="dropdown-item" href="category.php?category=Console">Console</a>
+                </div>
+            </li>
 
           </ul>
           <div class="container">
