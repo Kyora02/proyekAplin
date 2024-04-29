@@ -76,21 +76,40 @@
 <div id="belicepat" style="margin-top:20px;">
   <img src="Assets/petir.jpg" alt=""> Beli Cepat
   <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
-        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends','pubg-mobile'])">Mobile Game</button>
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['bigo','nimo','netflix'])">Streaming</button>
     </div>
     <div id="isicontent" style="display:flex;justify-content:space-evenly;">
       <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>Mobile Legends</h2>
-          <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>
-          
+          <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>   
       </div>
-  
+      <div id="nimo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Nimo</h2>
+          <center><img src="Assets/nimo.jpg" alt="" width="150px" height="150px"></center>   
+      </div>
+      <div id="netflix" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Netflix</h2>
+          <center><img src="Assets/netflix.jpg" alt="" width="150px" height="150px"></center>   
+      </div>
+      <div id="bigo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Bigo Live</h2>
+          <center><img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>   
+      </div>
       <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>PUBG Mobile</h2>
           <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
       </div>
-  
+      <div id="steam" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Steam</h2>
+          <center><img src="Assets/steam.jpg" alt="" width="150px" height="150px"></center>
+      </div>
+      <div id="genshin" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Genshin Impact</h2>
+          <center><img src="Assets/genshin.jpg" alt="" width="150px" height="150px"></center>
+      </div>
       <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>CS:GO</h2>
           <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>

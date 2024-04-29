@@ -31,7 +31,7 @@ if(isset($_POST['logout'])){
         <input class="btn btn-primary" type="submit" value="Logout" name="logout">
 
     </form>
-
+    History Transaksi
 </div>
 </body>
 </html>
