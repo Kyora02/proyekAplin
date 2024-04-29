@@ -75,7 +75,7 @@
     </div>
   </nav>
   </div>
-  <div id="listgame" style="display:flex; justify-content: space-between;">
+  <div id="listgame" style="display:flex; justify-content: space-evenly;">
     <div id="isi">
       top up game 
       <br>
