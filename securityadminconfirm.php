@@ -86,31 +86,47 @@ if(isset($_POST['logout'])){
             
             <div style="background-color:#282c34;padding:20px;border-radius:15px;">
                 <table class="table table-dark">
+                <thead>
                     <tr>
-                        <th>Tanggal</th>
-                        <th>Jumlah Transaksi Sukses</th>
-                        <th>Jumlah Transaksi Gagal</th>
+                        <th scope="col">Nama Pembeli</th>
+                        <th scope="col">Nama Penjual</th>
+                        <th scope="col">Nominal</th>
+                        <th scope="col">Bukti</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DONI</td>
+                        <td>Audie</td>
+                        <td>1.750.000</td>
+                        <td><img src="https://blog.metaco.gg/wp-content/uploads/2023/07/cara-top-up-kiosgamer-6.jpg" alt="" width="50px" height="50px"</td>
+                        <td>
+                        <Button class="btn btn-success" onclick="accept()"> Finish </Button>
+                            <Button class="btn btn-danger" onclick="reject()"> Cancel </Button>
+                        </td>
                     </tr>
                     <tr>
-                        <td> 22 - 04 - 2024 </td>
-                        <td> 15 </td>
-                        <td> 2 </td>
+                        <td>William</td>
+                        <td>Vanes</td>
+                        <td>500.000</td>
+                        <td><img src="https://blog.metaco.gg/wp-content/uploads/2023/07/cara-top-up-kiosgamer-6.jpg" alt="" width="50px" height="50px"></td>
+                        <td>
+                        <Button class="btn btn-success" onclick="accept()"> Finish </Button>
+                            <Button class="btn btn-danger" onclick="reject()"> Cancel </Button>
+                        </td>
                     </tr>
                     <tr>
-                        <td> 18 - 04 - 2024 </td>
-                        <td> 25 </td>
-                        <td> 6 </td>
+                        <td>Tino</td>
+                        <td>Kedrick</td>
+                        <td>750.000</td>
+                        <td><img src="https://blog.metaco.gg/wp-content/uploads/2023/07/cara-top-up-kiosgamer-6.jpg" alt="" width="50px" height="50px"</td>
+                        <td>
+                            <Button class="btn btn-success" onclick="accept()"> Finish </Button>
+                            <Button class="btn btn-danger" onclick="reject()"> Cancel </Button>
+                        </td>
                     </tr>
-                    <tr>
-                        <td> 15 - 04 - 2024 </td>
-                        <td> 30 </td>
-                        <td> 5 </td>
-                    </tr>
-                    <tr>
-                        <td> 14 - 04 - 2024 </td>
-                        <td> 12 </td>
-                        <td> 1 </td>
-                    </tr>
+                </tbody>
                 </table>
             </div>
 
@@ -121,4 +137,14 @@ if(isset($_POST['logout'])){
 
 </div>
 </body>
+<script>
+    function accept(){
+        alert("Transaksi Di Selesaikan");
+
+    }
+    function reject(){
+        alert("Transaksi Di Cancel");
+
+    }
+</script>
 </html>
