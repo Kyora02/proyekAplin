@@ -95,7 +95,7 @@
           <center><img src="Assets/netflix.jpg" alt="" width="150px" height="150px"></center>   
       </div>
       <div id="bigo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Bigo Live/h2>
+          <h2>Bigo Live</h2>
           <center><img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>   
       </div>
       <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
