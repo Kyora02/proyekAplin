@@ -101,7 +101,7 @@
   <img src="Assets/petir.jpg" alt=""> Beli Cepat
   <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
-        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo'])">PC Game</button>
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
     </div>
     <div id="isicontent" style="display:flex;justify-content:space-evenly;">
       <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
