@@ -90,11 +90,11 @@
           <h2>Nimo</h2>
           <center><img src="Assets/nimo.jpg" alt="" width="150px" height="150px"></center>   
       </div>
-      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+      <div id="netflix" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>Netflix</h2>
           <center><img src="Assets/netflix.jpg" alt="" width="150px" height="150px"></center>   
       </div>
-      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+      <div id="bigo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
           <h2>Bigo Live/h2>
           <center><img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>   
       </div>
