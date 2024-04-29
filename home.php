@@ -99,7 +99,7 @@
 </div>
 <div id="belicepat" style="margin-top:20px;">
   <img src="Assets/petir.jpg" alt=""> Beli Cepat
-  <div class="navbar" style="background-color: #333;padding: 10px;display: flex; justify-content: space-around;">
+  <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo'])">PC Game</button>
     </div>
