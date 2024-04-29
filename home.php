@@ -35,9 +35,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bag">
-        <!-- Navbar content -->
-    </nav>
+<nav class="navbar navbar-expand-lg bag">
+    <div class="container-xl d-flex justify-content-center">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Category items with dropdown behavior -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
+              <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
+              <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
+              <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
+              <a class="dropdown-item" href="category.php?category=Console">Console</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
 
     <div id="listgame">
         <!-- 10 items -->
@@ -61,14 +94,12 @@
             <br>
             Streaming
         </div>
-        <div id="isi">
-        <img src="Assets/petir.jpg" alt=""> <br>
-        Beli Cepat
-        </div>
+        
         <!-- Repeat these 6 more times for a total of 10 items -->
     </div>
 
-     
+    <div id="belicepat" style="margin-top:20px;">
+        <img src="Assets/petir.jpg" alt=""> Beli Cepat
         <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
             <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;"
                 onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
