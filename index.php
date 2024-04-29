@@ -3,6 +3,9 @@
 if(isset($_POST['login'])){
     header("location: home.php");
 }
+if(isset($_POST['securityadmin'])){
+    header("location: securityadmin.php");
+}
 
 
 ?>
@@ -61,7 +64,10 @@ if(isset($_POST['login'])){
                                 <strong>Don't have account?</strong>&nbsp;<a href="register.php" class="text-decoration-none">Register Now</a>
                                 </label>
                             </div>
-                        </div>
+                        </div><br>
+                        <form action="" method="post">
+                            <input class="btn btn-primary" type="submit" value="Security Admin" name="securityadmin">
+                        </form>
                     </form>
                 </div>
             </div>
