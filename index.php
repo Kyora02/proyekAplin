@@ -6,6 +6,9 @@ if(isset($_POST['login'])){
 if(isset($_POST['securityadmin'])){
     header("location: securityadmin.php");
 }
+if(isset($_POST['superadmin'])){
+    header("location: superadmin.php");
+}
 
 
 ?>
@@ -67,6 +70,7 @@ if(isset($_POST['securityadmin'])){
                         </div><br>
                         <form action="" method="post">
                             <input class="btn btn-primary" type="submit" value="Security Admin" name="securityadmin">
+                            <input class="btn btn-primary" type="submit" value="Security Admin" name="superadmin">
                         </form>
                     </form>
                 </div>
