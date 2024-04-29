@@ -97,9 +97,40 @@
       Streaming
     </div>
 </div>
-<div id="belicepat">
+<div id="belicepat" style="margin-top:20px;">
   <img src="Assets/petir.jpg" alt=""> Beli Cepat
+  <div class="navbar" style="background-color: #333;padding: 10px;display: flex; justify-content: space-around;">
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo'])">PC Game</button>
+    </div>
+
+    <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+        <h2>Mobile Legends</h2>
+        <p>This is the content for Mobile Legends.</p>
+    </div>
+
+    <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+        <h2>PUBG Mobile</h2>
+        <p>This is the content for PUBG Mobile.</p>
+    </div>
+
+    <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+        <h2>CS:GO</h2>
+        <p>This is the content for Counter-Strike: Global Offensive.</p>
+    </div>  
 </div>
 </body>
+<script>
+        function showContent(contentIds) {
+            var allContent = document.querySelectorAll('.content');
+            allContent.forEach(function (content) {
+                content.style.display = 'none';
+            });
+            contentIds.forEach(function (contentId) {
+                var content = document.getElementById(contentId);
+                content.style.display = 'block';
+            });
+        }
+    </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
