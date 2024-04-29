@@ -58,10 +58,10 @@ if (isset($_POST['logout'])) {
                 <a href="#" class="nav-link t1" aria-current="page">Home</a>
             </li>
             <li>
-                <a href="#" class="nav-link t1">Request Transaction</a>
+                <a href="#" class="nav-link t1">History Transaction</a>
             </li>
             <li>
-                <a href="#" class="nav-link t1">Confirm Transaction</a>
+                <a href="#" class="nav-link t1">Detail Transaction</a>
             </li>
         </ul>
         <hr>
