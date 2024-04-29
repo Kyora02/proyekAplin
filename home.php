@@ -103,21 +103,22 @@
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
         <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo'])">PC Game</button>
     </div>
-
-    <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-        <h2>Mobile Legends</h2>
-        <p>This is the content for Mobile Legends.</p>
+    <div id="isicontent" style="display:flex;justify-content:space-evenly;">
+      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Mobile Legends</h2>
+          <p>This is the content for Mobile Legends.</p>
+      </div>
+  
+      <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>PUBG Mobile</h2>
+          <p>This is the content for PUBG Mobile.</p>
+      </div>
+  
+      <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>CS:GO</h2>
+          <p>This is the content for Counter-Strike: Global Offensive.</p>
+      </div>  
     </div>
-
-    <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-        <h2>PUBG Mobile</h2>
-        <p>This is the content for PUBG Mobile.</p>
-    </div>
-
-    <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-        <h2>CS:GO</h2>
-        <p>This is the content for Counter-Strike: Global Offensive.</p>
-    </div>  
 </div>
 </body>
 <script>
