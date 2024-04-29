@@ -1,3 +1,12 @@
+<?php
+
+if(isset($_POST['login'])){
+    header("location: home.php");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +51,10 @@
                             </label>
                         </div><br>
                         <div class="row justify-content-center">
-                            <button class="btn btn-primary" type="submit" name="login">Login</button>
+                            <form action="" method="post">
+                                <button class="btn btn-primary" type="submit" name="login">Login</button>
+
+                            </form>
                         </div><br>
                         <div class="form- check">
                             <div>
