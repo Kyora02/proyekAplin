@@ -77,14 +77,14 @@
   </div>
   <div id="listgame" style="display:flex; justify-content: space-evenly;">
     <div id="isi">
-      top up game 
+      Top Up Game 
       <br>
       <img src="Assets/game.jpg" alt="">
     </div>
     <div id="isi">
-      top up game 
+      Jual Beli Akun
       <br>
-      <img src="Assets/game.jpg" alt="">
+      <img src="Assets/akun.jpg" alt="">
     </div>
 </div>
 
