@@ -75,7 +75,7 @@
     </div>
   </nav>
   </div>
-  <div id="listgame" style="display:flex; justify-content: space-evenly;">
+  <div id="listgame" style="display:flex; justify-content: space-evenly;margin-top:30px">
     <div id="isi">
       <img src="Assets/game.jpg" alt="">
       <br>
