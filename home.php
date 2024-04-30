@@ -20,76 +20,140 @@
             justify-content: space-evenly; /* Horizontal alignment */
         }
 
-        #isi {
+        .isi {
             text-align: center;
             padding: 20px;
             background-color: #f9f9f9;
             margin-bottom: 20px;
         }
 
-        #isi img {
+        .isi img {
             width: 150px;
             height: 150px;
+        }
+
+        .bag {
+            background-color: #BED7DC;
+        }
+
+        .container {
+            display: none; /* Initially hide the container */
+            justify-content: center;
+            align-items: flex-start;
+            height: 60vh;
+            padding: 20px;
+        }
+
+        .category-list {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #3c3f43;
+            max-width: 200px;
+            overflow-y: auto;
+        }
+
+        .product-list {
+            flex: 3;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        .category-item {
+            padding: 10px;
+            border-bottom: 1px solid #3c3f43;
+            cursor: pointer;
+        }
+
+        .category-item.active {
+            background-color: #a0a0a0; /* Warna latar belakang untuk kategori yang dipilih */
+            color: #ffffff; /* Warna teks untuk kategori yang dipilih */
+        }
+
+        .category-item:hover {
+            background-color: #a0a0a0;
+        }
+
+        .dropdown-menu {
+            background-color: #BED7DC; /* Background color */
+            border: none; /* Remove border */
+            box-shadow: none; /* Remove shadow */
+        }
+
+        .dropdown-item {
+            color: #3c3f43; /* Text color */
+            padding: 10px; /* Padding */
+            transition: background-color 0.3s; /* Transition effect for background color */
+        }
+
+        .dropdown-item:hover {
+            background-color: #a0a0a0; /* Hover background color */
+            color: #ffffff; /* Hover text color */
         }
     </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bag">
-    <div class="container-xl d-flex justify-content-center">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <!-- Category items with dropdown behavior -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Category
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
-              <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
-              <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
-              <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
-              <a class="dropdown-item" href="category.php?category=Console">Console</a>
+    <nav class="navbar navbar-expand-lg bag">
+        <div class="container-xl d-flex justify-content-center">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <!-- Modified Category dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
+                            Category
+                        </a>
+                        
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
             </div>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        </form>
-      </div>
-    </div>
-  </nav>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="category-list" id="category-list">
+            <div class="category-item" onclick="selectCategory(this)">Mobile</div>
+            <div class="category-item" onclick="selectCategory(this)">PC Game</div>
+            <div class="category-item" onclick="selectCategory(this)">Voucher</div>
+            <div class="category-item" onclick="selectCategory(this)">Streaming</div>
+            <div class="category-item" onclick="selectCategory(this)">Console</div>
+        </div>
 
+        <div class="product-list" id="product-list">
+            <!-- Daftar produk sesuai kategori akan ditambahkan di sini -->
+        </div>
+    </div>
     <div id="listgame">
         <!-- 10 items -->
-        <div id="isi">
+        <div class="isi">
             <img src="Assets/game.jpg" alt="">
             <br>
             Top Up Game
         </div>
-        <div id="isi">
+        <div class="isi">
             <img src="Assets/akun.jpg" alt="">
             <br>
             Jual Beli Akun
         </div>
-        <div id="isi">
+        <div class="isi">
             <img src="Assets/voucher.jpg" alt="">
             <br>
             Voucher & Game Key
         </div>
-        <div id="isi">
+        <div class="isi">
             <img src="Assets/streaming.jpg" alt="">
             <br>
             Streaming
@@ -135,8 +199,30 @@
             </div>
         </div>
     </div>
-
+   
     <script>
+        function toggleContainer() {
+            var container = document.querySelector('.container');
+            if (container.style.display === 'none') {
+                container.style.display = 'flex';
+            } else {
+                container.style.display = 'none';
+            }
+        }
+
+        function selectCategory(element) {
+            // Dapatkan semua item kategori
+            var categoryItems = document.querySelectorAll('.category-item');
+            
+            // Hapus kelas 'active' dari semua item kategori
+            categoryItems.forEach(function (item) {
+                item.classList.remove('active');
+            });
+
+            // Tambahkan kelas 'active' ke item kategori yang dipilih
+            element.classList.add('active');
+        }
+
         function showContent(contentIds) {
             var allContent = document.querySelectorAll('.content');
             allContent.forEach(function (content) {
