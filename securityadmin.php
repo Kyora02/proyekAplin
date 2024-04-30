@@ -45,12 +45,12 @@ if(isset($_POST['logout'])){
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link text-white">
+            <a href="securityadminrequest.php" class="nav-link text-white">
             Request Transaction
             </a>
         </li>
         <li>
-            <a href="#" class="nav-link text-white">
+            <a href="securityadminconfirm.php" class="nav-link text-white">
             Confirm Transaction
             </a>
         </li>
@@ -87,27 +87,27 @@ if(isset($_POST['logout'])){
             <div style="background-color:#282c34;padding:20px;border-radius:15px;">
                 <table class="table table-dark">
                     <tr>
-                        <th>Tanggal</th>
-                        <th>Jumlah Transaksi Sukses</th>
-                        <th>Jumlah Transaksi Gagal</th>
+                        <th scope="col">Tanggal</th>
+                        <th scope="col">Jumlah Transaksi Sukses</th>
+                        <th scope="col">Jumlah Transaksi Gagal</th>
                     </tr>
                     <tr>
-                        <td> 22 - 04 - 2024 </td>
+                        <td scope="row"> 22 - 04 - 2024 </td>
                         <td> 15 </td>
                         <td> 2 </td>
                     </tr>
                     <tr>
-                        <td> 18 - 04 - 2024 </td>
+                        <td scope="row"> 18 - 04 - 2024 </td>
                         <td> 25 </td>
                         <td> 6 </td>
                     </tr>
                     <tr>
-                        <td> 15 - 04 - 2024 </td>
+                        <td scope="row"> 15 - 04 - 2024 </td>
                         <td> 30 </td>
                         <td> 5 </td>
                     </tr>
                     <tr>
-                        <td> 14 - 04 - 2024 </td>
+                        <td scope="row"> 14 - 04 - 2024 </td>
                         <td> 12 </td>
                         <td> 1 </td>
                     </tr>

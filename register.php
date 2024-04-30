@@ -67,7 +67,9 @@ if(isset($_POST['register'])){
                         <div class="row justify-content-center">
                             <button class="btn btn-primary" type="submit" name="register">Create Account</button>
                         </div><br>
-                        <button name="login" class="btn btn-primary" type="submit">Already Have an Account? </button>
+                        <div class="form-check">
+                            <strong>Already have an account?</strong>&nbsp;<a href="index.php">Sign in</a>
+                        </div>
                         </form>
                     </form>
                 </div>

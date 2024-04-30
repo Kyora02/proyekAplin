@@ -11,6 +11,10 @@
   .bag {
     background-color: #BED7DC;
   }
+  .bagHome{
+    background-color: #FAF0E6;
+    height: 50vh;
+  }
 </style>
 
 <body>
@@ -26,16 +30,9 @@
                 <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
-                            <path d="M9 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V9C3 9.53043 3.21071 10.0391 3.58579 10.4142C3.96086 10.7893 4.46957 11 5 11H9C9.53043 11 10.0391 10.7893 10.4142 10.4142C10.7893 10.0391 11 9.53043 11 9V5C11 4.46957 10.7893 3.96086 10.4142 3.58579C10.0391 3.21071 9.53043 3 9 3ZM9 9H5V5H9V9Z" fill="#474747"></path>
-                            <path d="M19 3H15C14.4696 3 13.9609 3.21071 13.5858 3.58579C13.2107 3.96086 13 4.46957 13 5V9C13 9.53043 13.2107 10.0391 13.5858 10.4142C13.9609 10.7893 14.4696 11 15 11H19C19.5304 11 20.0391 10.7893 20.4142 10.4142C20.7893 10.0391 21 9.53043 21 9V5C21 4.46957 20.7893 3.96086 20.4142 3.58579C20.0391 3.21071 19.5304 3 19 3ZM19 9H15V5H19V9Z" fill="#474747"></path>
-                            <path d="M19 13H15C14.4696 13 13.9609 13.2107 13.5858 13.5858C13.2107 13.9609 13 14.4696 13 15V19C13 19.5304 13.2107 20.0391 13.5858 20.4142C13.9609 20.7893 14.4696 21 15 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V15C21 14.4696 20.7893 13.9609 20.4142 13.5858C20.0391 13.2107 19.5304 13 19 13ZM19 19H15V15H19V19Z" fill="#474747"></path>
-                            <path d="M9 13H5C4.46957 13 3.96086 13.2107 3.58579 13.5858C3.21071 13.9609 3 14.4696 3 15V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H9C9.53043 21 10.0391 20.7893 10.4142 20.4142C10.7893 20.0391 11 19.5304 11 19V15C11 14.4696 10.7893 13.9609 10.4142 13.5858C10.0391 13.2107 9.53043 13 9 13ZM9 19H5V15H9V19Z" fill="#474747"></path>
-                        </svg>
-                    </span>
-                    <strong>Category</strong>
+                <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Category
                 </a>
                 <ul class="dropdown-menu">
                     <li class="d-flex align-items-center">
@@ -105,6 +102,42 @@
     </div>
     </div>
   </nav>
+    <!-- <div class="container-xl d-flex justify-content-center">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Category items with dropdown behavior -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
+              <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
+              <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
+              <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
+              <a class="dropdown-item" href="category.php?category=Console">Console</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div> -->
+    <!-- </div> -->
+  <!-- </nav> --> -->
+  <!-- </div> -->
   <div id="listgame" style="display:flex; justify-content: space-evenly;margin-top:30px">
     <div id="isi">
       <img src="Assets/game.jpg" alt="">
@@ -121,62 +154,62 @@
       <br>
       Voucher & Game Key
     </div>
-    <div id="isi">
-      <img src="Assets/streaming.jpg" alt="">
-      <br>
-      Streaming
+  </div><br>
+<div class="bagHome container-xl">
+  <div id="belicepat" class="p-5">
+    <div class="d-flex align-items-center">
+      <img src="Assets/petir.jpg" alt="" class="img-fluid mr-2" style="max-width: 100px;">
+      <p class="font-weight-bold">Beli Cepat</p>
     </div>
-</div>
-<div id="belicepat" style="margin-top:20px;">
-  <img src="Assets/petir.jpg" alt=""> Beli Cepat
-  <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
-        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
-        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
-        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends','pubg-mobile'])">Mobile Game</button>
-        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['bigo','nimo','netflix'])">Streaming</button>
-    </div>
-    <div id="isicontent" style="display:flex;justify-content:space-evenly;">
-      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Mobile Legends</h2>
-          <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>   
+    <div class="navbar" style="display: flex; justify-content: space-around;">
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends','pubg-mobile'])">Mobile Game</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['bigo','nimo','netflix'])">Streaming</button>
       </div>
-      <div id="nimo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Nimo</h2>
-          <center><img src="Assets/nimo.jpg" alt="" width="150px" height="150px"></center>   
+      <div id="isicontent" style="display:flex;justify-content:space-evenly;">
+        <div id="mobile-legends" style="display: none;" class="content">
+            <h2>Mobile Legends</h2>
+            <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>   
+        </div>
+        <div id="nimo" style="display: none;" class="content">
+            <h2>Nimo</h2>
+            <center><img src="Assets/nimo.jpg" alt="" width="150px" height="150px"></center>   
+        </div>
+        <div id="netflix" style="display: none;" class="content">
+            <h2>Netflix</h2>
+            <center><img src="Assets/netflix.jpg" alt="" width="150px" height="150px"></center>   
+        </div>
+        <div id="bigo" style="display: none;" class="content">
+            <h2>Bigo Live</h2>
+            <center><img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>   
+        </div>
+        <div id="pubg-mobile" style="display: none;" class="content">
+            <h2>PUBG Mobile</h2>
+            <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
+        </div>
+        <div id="steam" style="display: none;" class="content">
+            <h2>Steam</h2>
+            <center><img src="Assets/steam.jpg" alt="" width="150px" height="150px"></center>
+        </div>
+        <div id="genshin" style="display: none;" class="content">
+            <h2>Genshin Impact</h2>
+            <center><img src="Assets/genshins.jpg" alt="" width="150px" height="150px"></center>
+        </div>
+        <div id="csgo" style="display: none;" class="content">
+            <h2>CS:GO</h2>
+            <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
+        </div> 
+        <div id="roblox" style="display: none;" class="content">
+            <h2>Roblox</h2>
+            <center><img src="Assets/roblox.jpg" alt="" width="150px" height="150px"></center>
+        </div> 
+        <div id="valo" style="display: none;" class="content">
+            <h2>Valorant</h2>
+            <center><img src="Assets/valo.jpg" alt="" width="150px" height="150px"></center>
+        </div>    
       </div>
-      <div id="netflix" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Netflix</h2>
-          <center><img src="Assets/netflix.jpg" alt="" width="150px" height="150px"></center>   
-      </div>
-      <div id="bigo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Bigo Live</h2>
-          <center><img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>   
-      </div>
-      <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>PUBG Mobile</h2>
-          <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
-      </div>
-      <div id="steam" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Steam</h2>
-          <center><img src="Assets/steam.jpg" alt="" width="150px" height="150px"></center>
-      </div>
-      <div id="genshin" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Genshin Impact</h2>
-          <center><img src="Assets/genshin.jpg" alt="" width="150px" height="150px"></center>
-      </div>
-      <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>CS:GO</h2>
-          <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
-      </div> 
-      <div id="roblox" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Roblox</h2>
-          <center><img src="Assets/roblox.jpg" alt="" width="150px" height="150px"></center>
-      </div> 
-      <div id="valo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-          <h2>Valorant</h2>
-          <center><img src="Assets/valo.jpg" alt="" width="150px" height="150px"></center>
-      </div>    
-    </div>
+  </div>
 </div>
 </body>
 <script>
