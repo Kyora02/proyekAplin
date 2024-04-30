@@ -118,6 +118,10 @@
       <br>
       Voucher & Game Key
     </div>
+    <div class="isi">
+      <img src="Assets/streaming.jpg" alt="" class="img-fluid">
+      <p class="text-center">Streaming</p>
+    </div>
   </div><br>
 <div class="bagHome container-xl">
   <div id="belicepat" class="p-5">
