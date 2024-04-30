@@ -147,7 +147,7 @@
         </div>
         <div id="genshin" style="display: none;" class="content">
             <h2>Genshin Impact</h2>
-            <center><img src="Assets/genshin.jpg" alt="" width="150px" height="150px"></center>
+            <center><img src="Assets/genshins.jpg" alt="" width="150px" height="150px"></center>
         </div>
         <div id="csgo" style="display: none;" class="content">
             <h2>CS:GO</h2>
