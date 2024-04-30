@@ -14,10 +14,10 @@
 
         #listgame {
             display: grid;
-            grid-template-columns: repeat(5, 1fr); /* 5 columns */
-            grid-template-rows: auto auto; /* 2 rows */
-            gap: 20px; /* Gap between items */
-            justify-content: space-evenly; /* Horizontal alignment */
+            grid-template-columns: repeat(5, 1fr); 
+            grid-template-rows: auto auto; 
+            gap: 20px; 
+            justify-content: space-evenly;
         }
 
         .isi {
@@ -37,7 +37,7 @@
         }
 
         .container {
-            display: none; /* Initially hide the container */
+            display: none; 
             justify-content: center;
             align-items: flex-start;
             height: 60vh;
@@ -65,8 +65,8 @@
         }
 
         .category-item.active {
-            background-color: #a0a0a0; /* Warna latar belakang untuk kategori yang dipilih */
-            color: #ffffff; /* Warna teks untuk kategori yang dipilih */
+            background-color: #a0a0a0; 
+            color: #ffffff; 
         }
 
         .category-item:hover {
@@ -74,20 +74,20 @@
         }
 
         .dropdown-menu {
-            background-color: #BED7DC; /* Background color */
-            border: none; /* Remove border */
-            box-shadow: none; /* Remove shadow */
+            background-color: #BED7DC; 
+            border: none;
+            box-shadow: none; 
         }
 
         .dropdown-item {
-            color: #3c3f43; /* Text color */
-            padding: 10px; /* Padding */
-            transition: background-color 0.3s; /* Transition effect for background color */
+            color: #3c3f43; 
+            padding: 10px; 
+            transition: background-color 0.3s; 
         }
 
         .dropdown-item:hover {
-            background-color: #a0a0a0; /* Hover background color */
-            color: #ffffff; /* Hover text color */
+            background-color: #a0a0a0;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -108,7 +108,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
-                    <!-- Modified Category dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
@@ -133,11 +132,9 @@
         </div>
 
         <div class="product-list" id="product-list">
-            <!-- Daftar produk sesuai kategori akan ditambahkan di sini -->
         </div>
     </div>
     <div id="listgame">
-        <!-- 10 items -->
         <div class="isi">
             <img src="Assets/game.jpg" alt="">
             <br>
@@ -158,8 +155,6 @@
             <br>
             Streaming
         </div>
-        
-        <!-- Repeat these 6 more times for a total of 10 items -->
     </div>
 
     <div id="belicepat" style="margin-top:20px;">
@@ -211,15 +206,10 @@
         }
 
         function selectCategory(element) {
-            // Dapatkan semua item kategori
             var categoryItems = document.querySelectorAll('.category-item');
-            
-            // Hapus kelas 'active' dari semua item kategori
             categoryItems.forEach(function (item) {
                 item.classList.remove('active');
             });
-
-            // Tambahkan kelas 'active' ke item kategori yang dipilih
             element.classList.add('active');
         }
 
