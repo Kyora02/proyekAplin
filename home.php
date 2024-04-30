@@ -25,10 +25,10 @@
 
         #listgame {
             display: grid;
-            grid-template-columns: repeat(5, 1fr); /* 5 columns */
-            grid-template-rows: auto auto; /* 2 rows */
-            gap: 20px; /* Gap between items */
-            justify-content: space-evenly; /* Horizontal alignment */
+            grid-template-columns: repeat(5, 1fr); 
+            grid-template-rows: auto auto; 
+            gap: 20px; 
+            justify-content: space-evenly;
         }
 
         .isi {
@@ -48,7 +48,7 @@
         }
 
         .container {
-            display: none; /* Initially hide the container */
+            display: none; 
             justify-content: center;
             align-items: flex-start;
             height: 500px;
