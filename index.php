@@ -62,16 +62,12 @@ if(isset($_POST['superadmin'])){
 
                             </form>
                         </div><br>
-                        <div class="form- check">
+                        <div class="form-check">
                             <div>
                                 <strong>Don't have account?</strong>&nbsp;<a href="register.php" class="text-decoration-none">Register Now</a>
                                 </label>
                             </div>
                         </div><br>
-                        <form action="" method="post">
-                            <input class="btn btn-primary" type="submit" value="Security Admin" name="securityadmin">
-                            <input class="btn btn-primary" type="submit" value="Super Admin" name="superadmin">
-                        </form>
                     </form>
                 </div>
             </div>
