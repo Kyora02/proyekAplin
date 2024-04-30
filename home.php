@@ -80,29 +80,31 @@
           </div>
     </div>
     </div>
-  </nav>
-  <div id="listgame" style="display:flex; justify-content: space-evenly;margin-top:30px">
-    <div id="isi">
-      <img src="Assets/game.jpg" alt="">
-      <br>
-      Top Up Game 
+  </nav><br>
+  <div class="container">
+    <div class="row">
+      <div id="listgame" class="d-flex justify-content-around">
+        <div class="isi">
+          <img src="Assets/game.jpg" alt="" class="img-fluid">
+          <p class="text-center">Top Up Game</p> 
+        </div>
+        <div class="isi">
+          <img src="Assets/akun.jpg" alt="" class="img-fluid">
+          <p class="text-center">Jual Beli Akun</p>
+        </div>
+        <div class="isi">
+          <img src="Assets/voucher.jpg" alt="" class="img-fluid">
+          <div class="text-center">
+            <p style="max-width: 80%; margin: 0 auto;">Voucher & Game Key</p>
+          </div>
+        </div>
+        <div class="isi">
+          <img src="Assets/streaming.jpg" alt="" class="img-fluid">
+          <p class="text-center">Streaming</p>
+        </div>
+      </div>
     </div>
-    <div id="isi">
-      <img src="Assets/akun.jpg" alt="">
-      <br>
-      Jual Beli Akun
-    </div>
-    <div id="isi">
-      <img src="Assets/voucher.jpg" alt="">
-      <br>
-      Voucher & Game Key
-    </div>
-    <div id="isi">
-      <img src="Assets/streaming.jpg" alt="">
-      <br>
-      Streaming
-    </div>
-</div>
+  </div>
 <div id="belicepat" style="margin-top:20px;">
   <img src="Assets/petir.jpg" alt=""> Beli Cepat
   <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
