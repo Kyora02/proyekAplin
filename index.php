@@ -61,13 +61,11 @@ if(isset($_POST['superadmin'])){
                                 <button class="btn btn-primary" type="submit" name="login">Login</button>
 
                             </form>
-                        </div><br>
-                        <div class="form-check">
-                            <div>
-                                <strong>Don't have account?</strong>&nbsp;<a href="register.php" class="text-decoration-none">Register Now</a>
-                                </label>
-                            </div>
-                        </div><br>
+                        </div><br>          
+                        <div>
+                            <strong>Don't have account?</strong>&nbsp;<a href="register.php" class="text-decoration-none">Register Now</a>
+                            </label>
+                        </div>              
                     </form>
                 </div>
             </div>
