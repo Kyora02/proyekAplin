@@ -93,126 +93,99 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bag">
-        <div class="container-xl d-flex justify-content-center">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
-                            Category
-                        </a>
-                        
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
+<nav class="navbar navbar-expand-lg bag">
+    <div class="container-xl d-flex justify-content-center">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <!-- Category items with dropdown behavior -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
+              <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
+              <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
+              <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
+              <a class="dropdown-item" href="category.php?category=Console">Console</a>
             </div>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="category-list" id="category-list">
-            <div class="category-item" onclick="selectCategory(this)">Mobile</div>
-            <div class="category-item" onclick="selectCategory(this)">PC Game</div>
-            <div class="category-item" onclick="selectCategory(this)">Voucher</div>
-            <div class="category-item" onclick="selectCategory(this)">Streaming</div>
-            <div class="category-item" onclick="selectCategory(this)">Console</div>
-        </div>
-
-        <div class="product-list" id="product-list">
-        </div>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
     </div>
-    <div id="listgame">
-        <div class="isi">
-            <img src="Assets/game.jpg" alt="">
-            <br>
-            Top Up Game
-        </div>
-        <div class="isi">
-            <img src="Assets/akun.jpg" alt="">
-            <br>
-            Jual Beli Akun
-        </div>
-        <div class="isi">
-            <img src="Assets/voucher.jpg" alt="">
-            <br>
-            Voucher & Game Key
-        </div>
-        <div class="isi">
-            <img src="Assets/streaming.jpg" alt="">
-            <br>
-            Streaming
-        </div>
+  </nav>
+  </div>
+  <div id="listgame" style="display:flex; justify-content: space-evenly;margin-top:30px">
+    <div id="isi">
+      <img src="Assets/game.jpg" alt="">
+      <br>
+      Top Up Game 
     </div>
-
-    <div id="belicepat" style="margin-top:20px;">
-        <img src="Assets/petir.jpg" alt=""> Beli Cepat
-        <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
-            <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;"
-                onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
-            <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;"
-                onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
-        </div>
-        <div id="isicontent" style="display:flex;justify-content:space-evenly;">
-            <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;"
-                class="content">
-                <h2>Mobile Legends</h2>
-                <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>
-
-            </div>
-
-            <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;"
-                class="content">
-                <h2>PUBG Mobile</h2>
-                <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
-            </div>
-
-            <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-                <h2>CS:GO</h2>
-                <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
-            </div>
-            <div id="roblox" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;"
-                class="content">
-                <h2>Roblox</h2>
-                <center><img src="Assets/roblox.jpg" alt="" width="150px" height="150px"></center>
-            </div>
-            <div id="valo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
-                <h2>Valorant</h2>
-                <center><img src="Assets/valo.jpg" alt="" width="150px" height="150px"></center>
-            </div>
-        </div>
+    <div id="isi">
+      <img src="Assets/akun.jpg" alt="">
+      <br>
+      Jual Beli Akun
     </div>
-   
-    <script>
-        function toggleContainer() {
-            var container = document.querySelector('.container');
-            if (container.style.display === 'none') {
-                container.style.display = 'flex';
-            } else {
-                container.style.display = 'none';
-            }
-        }
-
-        function selectCategory(element) {
-            var categoryItems = document.querySelectorAll('.category-item');
-            categoryItems.forEach(function (item) {
-                item.classList.remove('active');
-            });
-            element.classList.add('active');
-        }
-
+    <div id="isi">
+      <img src="Assets/voucher.jpg" alt="">
+      <br>
+      Voucher & Game Key
+    </div>
+    <div id="isi">
+      <img src="Assets/streaming.jpg" alt="">
+      <br>
+      Streaming
+    </div>
+</div>
+<div id="belicepat" style="margin-top:20px;">
+  <img src="Assets/petir.jpg" alt=""> Beli Cepat
+  <div class="navbar" style="background-color: white;padding: 10px;display: flex; justify-content: space-around;">
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile'])">For You</button>
+        <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
+    </div>
+    <div id="isicontent" style="display:flex;justify-content:space-evenly;">
+      <div id="mobile-legends" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Mobile Legends</h2>
+          <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>
+          
+      </div>
+  
+      <div id="pubg-mobile" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>PUBG Mobile</h2>
+          <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
+      </div>
+  
+      <div id="csgo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>CS:GO</h2>
+          <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
+      </div> 
+      <div id="roblox" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Roblox</h2>
+          <center><img src="Assets/roblox.jpg" alt="" width="150px" height="150px"></center>
+      </div> 
+      <div id="valo" style="display: none;padding: 20px;background-color: #f9f9f9;margin-top: 10px;" class="content">
+          <h2>Valorant</h2>
+          <center><img src="Assets/valo.jpg" alt="" width="150px" height="150px"></center>
+      </div>    
+    </div>
+</div>
+</body>
+<script>
         function showContent(contentIds) {
             var allContent = document.querySelectorAll('.content');
             allContent.forEach(function (content) {
