@@ -8,14 +8,100 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <style>
-  .bag {
-    background-color: #BED7DC;
-  }
-  .bagHome{
-    background-color: #FAF0E6;
-    height: 50vh;
-  }
-</style>
+       .content {
+            width: 300px;
+            height: 200px;
+            margin-bottom: 5px;
+        }
+
+        .content img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+
+        .bag {
+            background-color: #BED7DC;
+        }
+
+        #listgame {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: auto auto;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        .isi {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+        }
+
+        .isi img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .bag {
+            background-color: #BED7DC;
+        }
+
+        .category-container {
+            display: none;
+            justify-content: center;
+            align-items: flex-start;
+            height: 500px;
+            padding: 10px;
+        }
+
+        .category-list {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #3c3f43;
+            max-width: 200px;
+            overflow-y: auto;
+        }
+
+        .product-list {
+            flex: 3;
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+
+        .category-item {
+            padding: 10px;
+            border-bottom: 1px solid #3c3f43;
+            cursor: pointer;
+        }
+
+        .category-item.active {
+            background-color: #3c3f43;
+            color: #ffffff;
+        }
+
+        .category-item:hover {
+            background-color: #a0a0a0;
+        }
+
+        .dropdown-menu {
+            background-color: #BED7DC;
+            border: none;
+            box-shadow: none;
+        }
+
+        .dropdown-item {
+            color: #3c3f43;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown-item:hover {
+            background-color: #a0a0a0;
+            color: #ffffff;
+        }
+    </style>
 
 <body>
 <nav class="navbar navbar-expand-lg bag">
@@ -30,19 +116,14 @@
                 <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
             </li>
             <!-- Category items with dropdown behavior -->
+            <!-- Navbar Category Links -->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"aria-haspopup="true" aria-expanded="false">
-                    <strong>Category</strong>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="category.php?category=Mobile">Mobile</a>
-                    <a class="dropdown-item" href="category.php?category=PC Game">PC Game</a>
-                    <a class="dropdown-item" href="category.php?category=Voucher">Voucher</a>
-                    <a class="dropdown-item" href="category.php?category=Streaming">Streaming</a>
-                    <a class="dropdown-item" href="category.php?category=Console">Console</a>
-                </div>
-            </li>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
+                            Category
+                        </a>
 
+                    </li>
           </ul>
           <div class="container">
               <div class="row justify-content-center">
@@ -84,6 +165,18 @@
     </div>
     </div>
   </nav><br>
+  <div class="category-container">
+        <div class="category-list" id="category-list">
+            <div class="category-item" onclick="showContent(['mobile-legends', 'pubg-mobile'])">Mobile</div>
+            <div class="category-item" onclick="showContent(['csgo', 'roblox', 'valo'])">PC Game</div>
+            <div class="category-item">Voucher</div>
+            <div class="category-item" onclick="showContent(['nimo', 'netflix', 'bigo'])">Streaming</div>
+            <div class="category-item">Console</div>
+        </div>
+
+        <div class="product-list" id="product-list">
+        </div>
+    </div>
   <div class="container">
     <div class="row">
       <div id="listgame" class="d-flex justify-content-around">
@@ -115,10 +208,10 @@
       <p class="font-weight-bold">Beli Cepat</p>
     </div>
     <div class="navbar" style="display: flex; justify-content: space-around;">
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['csgo','valo','roblox'])">PC Game</button>
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['mobile-legends','pubg-mobile'])">Mobile Game</button>
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showContent(['bigo','nimo','netflix'])">Streaming</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['csgo','valo','roblox'])">PC Game</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends','pubg-mobile'])">Mobile Game</button>
+          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['bigo','nimo','netflix'])">Streaming</button>
       </div>
       <div id="isicontent" style="display:flex;justify-content:space-evenly;">
         <div id="mobile-legends" style="display: none;" class="content">
@@ -166,7 +259,15 @@
 </div>
 </body>
 <script>
-        function showContent(contentIds) {
+         function toggleContainer() {
+            var container = document.querySelector('.category-container');
+            if (container.style.display === 'none') {
+                container.style.display = 'flex';
+            } else {
+                container.style.display = 'none';
+            }
+        }
+        function showisi(contentIds) {
             var allContent = document.querySelectorAll('.content');
             allContent.forEach(function (content) {
                 content.style.display = 'none';
@@ -176,6 +277,29 @@
                 content.style.display = 'block';
             });
         }
+        function showContent(contentIds) {
+    var productList = document.getElementById('product-list');
+
+    productList.innerHTML = '';
+    var categoryItems = document.querySelectorAll('.category-item');
+    categoryItems.forEach(function (item) {
+        item.classList.remove('active');
+    });
+
+    contentIds.forEach(function (contentId) {
+        var content = document.getElementById(contentId);
+        var clonedContent = content.cloneNode(true);
+        clonedContent.style.display = 'block';
+        productList.appendChild(clonedContent);
+    });
+
+    var clickedCategoryItem = document.querySelector('.category-item[onclick="showContent(\'' + contentIds[0] + '\')"]');
+    clickedCategoryItem.classList.add('active');
+}
+
+
+
+
     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
