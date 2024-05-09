@@ -24,3 +24,15 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 });
+
+Route::get('/securityadmin', function () {
+    return view('securityadmin');
+});
+
+Route::get('/securityadminconfirm', function () {
+    return view('securityadminconfirm');
+});
+
+Route::get('/securityadminrequest', function () {
+    return view('securityadminrequest');
+});
