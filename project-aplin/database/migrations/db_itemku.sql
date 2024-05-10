@@ -1,4 +1,7 @@
-create or alter database db_itemku
+CREATE DATABASE IF NOT EXISTS db_itemku;
+
+USE db_itemku;
+
 CREATE TABLE Barang (
     Id_barang INT PRIMARY KEY AUTO_INCREMENT,
     Nama_barang VARCHAR(255),
@@ -6,6 +9,7 @@ CREATE TABLE Barang (
     id_kategori INT,
     FOREIGN KEY (id_kategori) REFERENCES Kategori(Id_kategori)
 );
+
 CREATE TABLE Users (
     Id_user INT PRIMARY KEY AUTO_INCREMENT,
     Username VARCHAR(255),
