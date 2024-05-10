@@ -10,6 +10,7 @@ CREATE TABLE Barang (
     FOREIGN KEY (id_kategori) REFERENCES Kategori(Id_kategori)
 );
 
+
 CREATE TABLE Users (
     Id_user INT PRIMARY KEY AUTO_INCREMENT,
     Username VARCHAR(255),
