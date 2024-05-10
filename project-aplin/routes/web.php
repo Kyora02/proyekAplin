@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PenggunaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,11 @@ Route::get('/securityadminconfirm', function () {
 
 Route::get('/securityadminrequest', function () {
     return view('securityadminrequest');
+});
+
+
+Route::prefix('pengguna')->group(function () {
+Route::post('/insert', [PenggunaController::class, 'insert']);
+Route::post('/update', [PenggunaController::class, 'update']);
+Route::post('/delete', [PenggunaController::class, 'delete']);
 });
