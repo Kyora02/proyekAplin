@@ -63,7 +63,7 @@ if(isset($_POST['superadmin'])){
                             </form>
                         </div><br>          
                         <div>
-                            <strong>Don't have account?</strong>&nbsp;<a href="register.php" class="text-decoration-none">Register Now</a>
+                            <strong>Don't have account?</strong>&nbsp;<a href="/register" class="text-decoration-none">Register Now</a>
                             </label>
                         </div>              
                     </form>
