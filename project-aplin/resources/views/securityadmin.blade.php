@@ -60,25 +60,22 @@ if(isset($_POST['logout'])){
         <div class="dropdown">
         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://media.licdn.com/dms/image/D4D03AQHH-5SQVy71Iw/profile-displayphoto-shrink_800_800/0/1706322955624?e=2147483647&v=beta&t=uRJ794S4lVY9wSSMGhS6hp0B2PJsSdlDVzNScwHAWQY" alt="" width="32" height="32" class="rounded-circle me-2">
-            <strong>Rico</strong>
+            <strong>{{session("user")}}</strong>
         </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+        <ul class="dropdown-menu text-small shadow">
             <li><a class="dropdown-item" href="#">New project...</a></li>
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <li><a class="dropdown-item" href="/logout">Sign out</a></li>
         </ul>
         </div>
     </div>
     
     <div class="w-full text-bg-dark" >
         <div style="display:flex;justify-content:space-evenly;background-color:#272731; padding:20px;border-radius:15px;" >
-            <h2 >Welcome Rico,[ Security Admin ]!</h2>
-            <form action="" method="post">
-                <input class="btn btn-primary" type="submit" value="Logout" name="logout">
-        
-            </form>
+            <h2 >Welcome {{session('user')}},[ Security Admin ]!</h2>
+
 
         </div><br><br><br><br>
         <div class="container">
@@ -120,5 +117,7 @@ if(isset($_POST['logout'])){
     </div>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </body>
 </html>
