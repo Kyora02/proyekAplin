@@ -8,103 +8,119 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <style>
-       .content {
-            width: 300px;
-            height: 200px;
-            margin-bottom: 5px;
-        }
+    .content {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 5px;
+    }
 
-        .content img {
-            max-width: 100px;
-            max-height: 100px;
-        }
+    .content img {
+        max-width: 100px;
+        max-height: 100px;
+    }
 
-        .bag {
-            background-color: #BED7DC;
-        }
+    .bag {
+        background-color: #BED7DC;
+    }
 
-        #listgame {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: auto auto;
-            gap: 20px;
-            justify-content: space-evenly;  
-        }
+    #listgame {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        justify-content: space-evenly;  
+    }
 
-        .isi {
-            text-align: center;
-            padding: 20px;
-            background-color: #f9f9f9;
-            margin-bottom: 20px;
-        }
+    .isi {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
 
-        .isi img {
-            width: 150px;
-            height: 150px;
-        }
+    .isi img {
+        width: 150px;
+        height: 150px;
+    }
 
-        .bag {
-            background-color: #BED7DC;
-        }
+    .bag {
+        background-color: #BED7DC;
+    }
 
-        .category-container {
-            display: none;
-            justify-content: center;
-            align-items: flex-start;
-            height: 500px;
-            padding: 10px;
-        }
+    .category-container {
+        display: none;
+        justify-content: center;
+        align-items: flex-start;
+        height: 500px;
+        padding: 10px;
+    }
 
-        .category-list {
-            flex: 1;
-            padding: 10px;
-            border-right: 1px solid #3c3f43;
-            max-width: 200px;
-            overflow-y: auto;
-        }
+    .category-list {
+        flex: 1;
+        padding: 10px;
+        border-right: 1px solid #3c3f43;
+        max-width: 200px;
+        overflow-y: auto;
+    }
 
-        .product-list {
-            flex: 3;
-            padding: 10px;
-            overflow-y: auto;
-            max-height: 400px;
-        }
+    .product-list {
+        flex: 3;
+        padding: 10px;
+        overflow-y: auto;
+        max-height: 400px;
+    }
 
-        .category-item {
-            padding: 10px;
-            border-bottom: 1px solid #3c3f43;
-            cursor: pointer;
-        }
+    .category-item {
+        padding: 10px;
+        border-bottom: 1px solid #3c3f43;
+        cursor: pointer;
+    }
 
-        .category-item.active {
-            background-color: #3c3f43;
-            color: #ffffff;
-        }
+    .category-item.active {
+        background-color: #3c3f43;
+        color: #ffffff;
+    }
 
-        .category-item:hover {
-            background-color: #a0a0a0;
-        }
+    .category-item:hover {
+        background-color: #a0a0a0;
+    }
 
-        .dropdown-menu {
-            background-color: #BED7DC;
-            border: none;
-            box-shadow: none;
-        }
+    .dropdown-menu {
+        background-color: #BED7DC;
+        border: none;
+        box-shadow: none;
+    }
 
-        .dropdown-item {
-            color: #3c3f43;
-            padding: 10px;
-            transition: background-color 0.3s;
-        }
+    .dropdown-item {
+        color: #3c3f43;
+        padding: 10px;
+        transition: background-color 0.3s;
+    }
 
-        .dropdown-item:hover {
-            background-color: #a0a0a0;
-            color: #ffffff;
-        }
-        .bagHome{
-            background-color: #A0DEFF;
-        }
-    </style>
+    .dropdown-item:hover {
+        background-color: #a0a0a0;
+        color: #ffffff;
+    }
+    .bagHome{
+        background-color: #A0DEFF;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+    width: auto;
+    height: auto;
+    }
+
+    .carousel-control-prev {
+    left: 0;
+    }
+
+    .carousel-control-next {
+    right: 0;
+    }
+    #fontText{
+        font-size: 25pt;
+    }
+</style>
 
 <body>
     @if(Session::has('username'))
@@ -193,21 +209,21 @@
       <div id="listgame" class="d-flex justify-content-around">
         <div class="isi">
           <img src="Assets/game.jpg" alt="" class="img-fluid">
-          <p class="text-center">Top Up Game</p> 
+          <strong><p class="text-center">Top Up Game</p> </strong>
         </div>
         <div class="isi">
           <img src="Assets/akun.jpg" alt="" class="img-fluid">
-          <p class="text-center">Jual Beli Akun</p>
+          <strong><p class="text-center">Jual Beli Akun</p></strong>
         </div>
         <div class="isi">
           <img src="Assets/voucher.jpg" alt="" class="img-fluid">
           <div class="text-center">
-            <p style="max-width: 80%; margin: 0 auto;">Voucher & Game Key</p>
+            <strong><p style="max-width: 80%; margin: 0 auto;">Voucher & Game Key</p></strong>
           </div>
         </div>
         <div class="isi">
-          <img src="Assets/streaming.jpg" alt="" class="img-fluid">
-          <p class="text-center">Streaming</p>
+          <img src="Assets/streaming.jpeg" alt="" class="img-fluid">
+          <strong><p class="text-center">Streaming</p></strong>
         </div>
       </div>
     </div>
@@ -216,16 +232,16 @@
     <div class="container-xl">
         <div id="belicepat" class="p-5">
           <div class="d-flex align-items-center">
-            <img src="Assets/petir.jpg" alt="" class="img-fluid mr-2" style="max-width: 100px;">
-            <p class="px-2"><strong>Beli Cepat</strong></p>
+            <img src="Assets/petir.png" alt="" class="img-fluid mr-2" style="max-width: 100px;">
+            <p class="px-2" id="fontText"><strong>Beli Cepat</strong></p>
           </div><br>
           <div class="navbar" style="display: flex; justify-content: space-around;">
-                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
-                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['csgo','valo','roblox'])">PC Game</button>
-                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends','pubg-mobile'])">Mobile Game</button>
-                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['bigo','nimo','netflix'])">Streaming</button>
+                <button class="btn" style="background-color: #555;color: white;border: none;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
+                <button class="btn" style="background-color: #555;color: white;border: none;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['csgo','valo','roblox'])">PC Game</button>
+                <button class="btn" style="background-color: #555;color: white;border: none;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends','pubg-mobile'])">Mobile Game</button>
+                <button class="btn" style="background-color: #555;color: white;border: none;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['bigo','nimo','netflix'])">Streaming</button>
             </div>
-            <div id="isicontent" style="display:flex;justify-content:space-evenly;">
+            <div class="container"id="isicontent" style="display:flex;justify-content:space-evenly;">
               <div id="mobile-legends" style="display: none;" class="content">
                   <div class="text-center">
                       <img src="Assets/ml.jpg" alt="" width="150px" height="150px">   
@@ -288,37 +304,49 @@
               </div>    
             </div>
         </div>
-
     </div>
 </div><br><br><br>
 
-<div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+<div class="d-flex justify-content-center">
+    <div class="mx-3">
+        <div id="carouselExampleIndicators" class="carousel slide" style="max-width: 800px;">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Assets/carousel.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/carousel1.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Assets/carousel2.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-      </div>
+    <div class="mx-3">
+        <div class="d-flex flex-column">
+            <img src="Assets/promo.jpeg" alt="" style="max-width: 600px;" class="mb-3">
+            <img src="Assets/promo1.jpg" alt="" style="max-width: 600px;">
+        </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</body>
+</div><br>
+<footer>
+
+</footer>
+
 <script>
          function toggleContainer() {
             var container = document.querySelector('.category-container');
@@ -328,6 +356,17 @@
                 container.style.display = 'none';
             }
         }
+        function showisi(contentIds) {
+            var allContent = document.querySelectorAll('.content');
+            allContent.forEach(function (content) {
+                content.style.display = 'none';
+            });
+            contentIds.forEach(function (contentId) {
+                var content = document.getElementById(contentId);
+                content.style.display = 'block';
+            });
+        }
+
         function showisi(contentIds) {
             var allContent = document.querySelectorAll('.content');
             allContent.forEach(function (content) {
