@@ -12,6 +12,10 @@ if(isset($_POST['superadmin'])){
 
 
 ?>
+@if(session('error'))
+<div class="alert alert-danger">{{ session('error') }}</div>
+@endif
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +44,8 @@ if(isset($_POST['superadmin'])){
             <div class="col-sm-6">
                 <div class="box border rounded p-5">
                     <h1 class="text-center">Login</h1>
-                    <form action="" method="post">
+                    <form action="/pengguna/login" method="post">
+                        @csrf
                         <div class="form-group">
                             <label for="username"><strong>Username</strong></label>
                             <input type="text" class="form-control rounded" id="username" name="username">
@@ -57,14 +62,15 @@ if(isset($_POST['superadmin'])){
                             </label>
                         </div><br>
                         <div class="row justify-content-center">
-                            <form action="" method="post">
+                            
                                 <button class="btn btn-primary" type="submit" name="login">Login</button>
 
-                            </form>
+                            
                         </div><br>          
                         <div>
-                            <strong>Don't have an account?</strong>&nbsp;<a href="/register" class="text-decoration-none">Register Now</a>
-                        </div>                                    
+                            <strong>Don't have account?</strong>&nbsp;<a href="/register" class="text-decoration-none">Register Now</a>
+                            </label>
+                        </div>              
                     </form>
                 </div>
             </div>

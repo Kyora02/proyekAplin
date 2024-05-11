@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,9 @@ Route::get('/register', function () {
 Route::get('/securityadmin', function () {
     return view('securityadmin');
 });
+Route::get('/superadmin', function () {
+    return view('superadmin');
+});
 
 Route::get('/securityadminconfirm', function () {
     return view('securityadminconfirm');
@@ -36,3 +40,14 @@ Route::get('/securityadminconfirm', function () {
 Route::get('/securityadminrequest', function () {
     return view('securityadminrequest');
 });
+
+
+Route::prefix('pengguna')->group(function () {
+Route::post('/insert', [PenggunaController::class, 'insert']);
+Route::post('/update', [PenggunaController::class, 'update']);
+Route::post('/delete', [PenggunaController::class, 'delete']);
+Route::post('/login', [AuthController::class, 'login']);
+});
+
+
+

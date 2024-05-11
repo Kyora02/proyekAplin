@@ -36,7 +36,8 @@ if(isset($_POST['register'])){
             <div class="col-sm-6">
                 <div class="box border rounded p-5">
                     <h1 class="text-center">Register</h1>
-                    <form action="" method="post">
+                    <form action="/pengguna/insert" method="post">
+                        @csrf
                         <div class="form-group">
                             <label for="username"><strong>Username</strong></label>
                             <input type="text" class="form-control rounded" id="username" name="username">
