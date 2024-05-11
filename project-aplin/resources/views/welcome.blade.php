@@ -104,6 +104,15 @@
     </style>
 
 <body>
+    @if(Session::has('username'))
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Welcome, {{ Session::get('username') }}</p>
+            </div>
+        </div>
+    </div>
+@endif
 <nav class="navbar navbar-expand-lg bag">
     <div class="container-xl d-flex justify-content-center">
       <a class="navbar-brand" href="#"><strong>ItemConsignment</strong></a> 
@@ -162,6 +171,8 @@
     </div>
     </div>
   </nav><br>
+ 
+
   <div class="category-container">
         <div class="category-list" id="category-list">
             <div class="category-item" onclick="showContent(['mobile-legends', 'pubg-mobile'])">Mobile</div>
