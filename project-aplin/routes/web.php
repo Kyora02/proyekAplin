@@ -42,7 +42,12 @@ Route::get('/profile',function () {
 Route::get('/securityadminrequest', function () {
     return view('securityadminrequest');
 });
-
+Route::get('/logout', function () {
+    if(session()->has('user')){
+        session()->pull('user');
+    }
+    return redirect('login');
+});
 
 Route::prefix('pengguna')->group(function () {
 Route::post('/insert', [PenggunaController::class, 'insert']);

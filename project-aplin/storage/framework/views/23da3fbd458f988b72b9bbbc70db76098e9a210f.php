@@ -164,7 +164,7 @@
                 </li>
                 <li><a class="dropdown-item" href="/profile">My Profile   </a></li>
                 <li><a class="dropdown-item" href="">Account Settings</a></li>
-                <li><a class="dropdown-item text-danger" href="">Logout</a></li>
+                <li><a class="dropdown-item text-danger" href="/logout">Logout</a></li>
               </ul>
             </div>         
           </div>
