@@ -49,10 +49,25 @@
         .profile-info p {
             color: #666;
         }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #007bff;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
+
+    <a href="/" class="back-button">Back to Main Page</a>
 
     <div class="profile-container">
         <div class="profile-picture">
@@ -67,7 +82,7 @@
             Password:  <br>         
         </div>
     </div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
