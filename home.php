@@ -116,7 +116,6 @@
                 <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
             </li>
             <li class="nav-item dropdown">
-<<<<<<< HEAD
                 <a class="nav-link dropdown-toggle" href="category.php" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Category
@@ -148,14 +147,6 @@
                     </li>
                 </ul>
             </li>
-=======
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
-                            Category
-                        </a>
-
-                    </li>
->>>>>>> william
           </ul>
           <div class="container">
               <div class="row justify-content-center">
