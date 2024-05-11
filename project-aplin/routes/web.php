@@ -36,7 +36,9 @@ Route::get('/superadmin', function () {
 Route::get('/securityadminconfirm', function () {
     return view('securityadminconfirm');
 });
-
+Route::get('/profile',function () {
+    return view('profile');
+});
 Route::get('/securityadminrequest', function () {
     return view('securityadminrequest');
 });

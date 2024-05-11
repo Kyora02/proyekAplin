@@ -162,7 +162,7 @@
                 <li class="dropdown-item">
                   <p class="fw-semibold mb-0"><?php echo e(session('user')); ?></p>
                 </li>
-                <li><a class="dropdown-item" href="">My Profile   </a></li>
+                <li><a class="dropdown-item" href="/profile">My Profile   </a></li>
                 <li><a class="dropdown-item" href="">Account Settings</a></li>
                 <li><a class="dropdown-item text-danger" href="">Logout</a></li>
               </ul>
