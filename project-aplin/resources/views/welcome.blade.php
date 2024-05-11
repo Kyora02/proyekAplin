@@ -28,7 +28,7 @@
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: auto auto;
             gap: 20px;
-            justify-content: space-evenly;
+            justify-content: space-evenly;  
         }
 
         .isi {
@@ -101,6 +101,9 @@
             background-color: #a0a0a0;
             color: #ffffff;
         }
+        .bagHome{
+            background-color: #A0DEFF;
+        }
     </style>
 
 <body>
@@ -127,7 +130,7 @@
             <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
-                            Category
+                            <strong>Category</strong>
                         </a>
 
                     </li>
@@ -164,7 +167,7 @@
                 </li>
                 <li><a class="dropdown-item" href="">My Profile</a></li>
                 <li><a class="dropdown-item" href="">Account Settings</a></li>
-                <li><a class="dropdown-item text-danger" href="">Logout</a></li>
+                <li><a class="dropdown-item text-danger" href="/login">Logout</a></li>
               </ul>
             </div>         
           </div>
@@ -209,62 +212,112 @@
       </div>
     </div>
   </div><br>
-<div class="bagHome container-xl">
-  <div id="belicepat" class="p-5">
-    <div class="d-flex align-items-center">
-      <img src="Assets/petir.jpg" alt="" class="img-fluid mr-2" style="max-width: 100px;">
-      <p class="font-weight-bold">Beli Cepat</p>
+<div class="bagHome">
+    <div class="container-xl">
+        <div id="belicepat" class="p-5">
+          <div class="d-flex align-items-center">
+            <img src="Assets/petir.jpg" alt="" class="img-fluid mr-2" style="max-width: 100px;">
+            <p class="px-2"><strong>Beli Cepat</strong></p>
+          </div><br>
+          <div class="navbar" style="display: flex; justify-content: space-around;">
+                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
+                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['csgo','valo','roblox'])">PC Game</button>
+                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends','pubg-mobile'])">Mobile Game</button>
+                <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['bigo','nimo','netflix'])">Streaming</button>
+            </div>
+            <div id="isicontent" style="display:flex;justify-content:space-evenly;">
+              <div id="mobile-legends" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/ml.jpg" alt="" width="150px" height="150px">   
+                      <p class="mt-2"><strong>Mobile Legends</strong></p>
+                  </div>                     
+              </div>
+              <div id="nimo" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/nimo.jpg" alt="" width="150px" height="150px">   
+                      <p class="mt-2"><strong>Nimo</strong></p>
+                  </div>
+              </div>
+              <div id="netflix" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/netflix.jpg" alt="" width="150px" height="150px">   
+                      <p class="mt-2"><strong>Netflix</strong></p>
+                  </div>
+              </div>
+              <div id="bigo" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>      
+                      <p class="mt-2"><strong>Bigo Live</strong></p>
+                  </div> 
+              </div>
+              <div id="pubg-mobile" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
+                      <p class="mt-2"><strong>PUBG Mobile</strong></p>
+                  </div>
+              </div>
+              <div id="steam" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/steam.jpg" alt="" width="150px" height="150px"></center>
+                      <p class="mt-2"><strong>Steam</strong></p>
+                  </div>
+              </div>
+              <div id="genshin" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/genshins.jpg" alt="" width="150px" height="150px"></center>
+                      <p><strong>Genshin Impact</strong></p>
+                  </div>
+              </div>
+              <div id="csgo" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
+                      <p class="mt-2"><strong>CS:GO</strong></p>
+                  </div>
+              </div> 
+              <div id="roblox" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/roblox.jpg" alt="" width="150px" height="150px">
+                      <p class="mt-2"><strong>Roblox</strong></p>
+                  </div>
+              </div> 
+              <div id="valo" style="display: none;" class="content">
+                  <div class="text-center">
+                      <img src="Assets/valo.jpg" alt="" width="150px" height="150px">
+                      <p class="mt-2"><strong>Valorant</strong></p>
+                  </div>
+              </div>    
+            </div>
+        </div>
+
     </div>
-    <div class="navbar" style="display: flex; justify-content: space-around;">
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends', 'pubg-mobile','steam','genshin'])">For You</button>
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['csgo','valo','roblox'])">PC Game</button>
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['mobile-legends','pubg-mobile'])">Mobile Game</button>
-          <button style="background-color: #555;color: white;border: none;padding: 10px 20px;cursor: pointer;transition: background-color 0.3s;" onclick="showisi(['bigo','nimo','netflix'])">Streaming</button>
+</div><br><br><br>
+
+<div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="..." class="d-block w-100" alt="...">
       </div>
-      <div id="isicontent" style="display:flex;justify-content:space-evenly;">
-        <div id="mobile-legends" style="display: none;" class="content">
-            <h2>Mobile Legends</h2>
-            <center><img src="Assets/ml.jpg" alt="" width="150px" height="150px"></center>   
-        </div>
-        <div id="nimo" style="display: none;" class="content">
-            <h2>Nimo</h2>
-            <center><img src="Assets/nimo.jpg" alt="" width="150px" height="150px"></center>   
-        </div>
-        <div id="netflix" style="display: none;" class="content">
-            <h2>Netflix</h2>
-            <center><img src="Assets/netflix.jpg" alt="" width="150px" height="150px"></center>   
-        </div>
-        <div id="bigo" style="display: none;" class="content">
-            <h2>Bigo Live</h2>
-            <center><img src="Assets/bigo.jpg" alt="" width="150px" height="150px"></center>   
-        </div>
-        <div id="pubg-mobile" style="display: none;" class="content">
-            <h2>PUBG Mobile</h2>
-            <center><img src="Assets/pubg.jpg" alt="" width="150px" height="150px"></center>
-        </div>
-        <div id="steam" style="display: none;" class="content">
-            <h2>Steam</h2>
-            <center><img src="Assets/steam.jpg" alt="" width="150px" height="150px"></center>
-        </div>
-        <div id="genshin" style="display: none;" class="content">
-            <h2>Genshin Impact</h2>
-            <center><img src="Assets/genshins.jpg" alt="" width="150px" height="150px"></center>
-        </div>
-        <div id="csgo" style="display: none;" class="content">
-            <h2>CS:GO</h2>
-            <center><img src="Assets/cs.jpg" alt="" width="150px" height="150px"></center>
-        </div> 
-        <div id="roblox" style="display: none;" class="content">
-            <h2>Roblox</h2>
-            <center><img src="Assets/roblox.jpg" alt="" width="150px" height="150px"></center>
-        </div> 
-        <div id="valo" style="display: none;" class="content">
-            <h2>Valorant</h2>
-            <center><img src="Assets/valo.jpg" alt="" width="150px" height="150px"></center>
-        </div>    
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
       </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</div>
 </body>
 <script>
          function toggleContainer() {
@@ -285,7 +338,7 @@
                 content.style.display = 'block';
             });
         }
-        function showContent(contentIds) {
+    function showContent(contentIds) {
     var productList = document.getElementById('product-list');
 
     productList.innerHTML = '';
