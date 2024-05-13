@@ -24,18 +24,16 @@ class AuthController extends Controller
                              ->first();
 
         if($pengguna) {
-            $request->session()->put('user',$username);
-            echo session('user');
+            $request->session()->put('username',$username);
+            
             if ($pengguna->Role == 0) {
                 return redirect('/');
             } elseif ($pengguna->Role == 1) {
                 return redirect('/securityadmin');
-            }
-             elseif ($pengguna->Role == 2) {
+            } elseif ($pengguna->Role == 2) {
                 return redirect('/superadmin');
             }
         } else {
-
             return back()->with('error', 'Username atau password salah.');
         }
     }

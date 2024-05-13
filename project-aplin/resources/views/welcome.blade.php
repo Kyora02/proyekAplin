@@ -104,15 +104,7 @@
     </style>
 
 <body>
-    @if(Session::has('username'))
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p>Welcome, {{ Session::get('username') }}</p>
-            </div>
-        </div>
-    </div>
-@endif
+    
 <nav class="navbar navbar-expand-lg bag">
     <div class="container-xl d-flex justify-content-center">
         <a class="navbar-brand" href="#"><strong>ItemConsignment</strong></a>
@@ -130,13 +122,22 @@
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Category
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Category 1</a>
-                        <a class="dropdown-item" href="#">Category 2</a>
-                        <a class="dropdown-item" href="#">Category 3</a>
-                    </div>
+                    <div class="category-container">
+                    <div class="category-list" id="category-list">
+    <div class="category-item" onclick="showContent(['mobile-legends', 'pubg-mobile'])">Mobile</div>
+    <div class="category-item" onclick="showContent(['csgo', 'roblox', 'valo'])">PC Game</div>
+    <div class="category-item" onclick="showContent(['voucher'])">Voucher</div>
+    <div class="category-item" onclick="showContent(['nimo', 'netflix', 'bigo'])">Streaming</div>
+    <div class="category-item" onclick="showContent(['console'])">Console</div>
+</div>
+
+        
                 </li>
+                <div class="product-list" id="product-list">
+        </div>
+    </div>
             </ul>
+            
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
@@ -163,18 +164,19 @@
                         </svg>
                     </div>
                 </a>
-                <ul class="dropdown-menu dropdown-menu">
-                    @if(Session::has('username'))
-                    <li class="dropdown-item">
-                        <p class="fw-semibold mb-0">{{session('user')}}</p>
-                    </li>
-                    <li><a class="dropdown-item" href="/profile">My Profile</a></li>
-                    <li><a class="dropdown-item" href="">Account Settings</a></li>
-                    <li><a class="dropdown-item text-danger" href="/logout">Logout</a></li>
-                    @else
-                    <li><a class="dropdown-item" href="/login">Login</a></li>
-                    @endif
-                </ul>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    @if(Session::has('username'))
+        <li class="dropdown-item">
+            <p class="fw-semibold mb-0">{{ session('username') }}</p>
+        </li>
+        <li><a class="dropdown-item" href="/profile">My Profile</a></li>
+        <li><a class="dropdown-item" href="">Account Settings</a></li>
+        <li><a class="dropdown-item text-danger" href="/logout">Logout</a></li>
+    @else
+        <li><a class="dropdown-item" href="/login">Login</a></li>
+    @endif
+</div>
+
             </div>
         </div>
     </div>
@@ -313,6 +315,8 @@
     var clickedCategoryItem = document.querySelector('.category-item[onclick="showContent(\'' + contentIds[0] + '\')"]');
     clickedCategoryItem.classList.add('active');
 }
+
+
     </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
