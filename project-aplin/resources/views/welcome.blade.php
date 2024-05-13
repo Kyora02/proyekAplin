@@ -118,23 +118,14 @@
                     <a class="nav-link active" aria-current="page" href="#"><strong>Home</strong></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Category
-                    </a>
-                    <div class="category-container">
-                    <div class="category-list" id="category-list">
-    <div class="category-item" onclick="showContent(['mobile-legends', 'pubg-mobile'])">Mobile</div>
-    <div class="category-item" onclick="showContent(['csgo', 'roblox', 'valo'])">PC Game</div>
-    <div class="category-item" onclick="showContent(['voucher'])">Voucher</div>
-    <div class="category-item" onclick="showContent(['nimo', 'netflix', 'bigo'])">Streaming</div>
-    <div class="category-item" onclick="showContent(['console'])">Console</div>
-</div>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="toggleContainer()">
+                            Category
+                        </a>
 
+                    </li>
+               
         
-                </li>
-                <div class="product-list" id="product-list">
-        </div>
     </div>
             </ul>
             
